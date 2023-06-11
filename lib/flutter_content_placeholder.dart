@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
 class ContentPlaceholder extends StatelessWidget {
-  /// Single block for group of shapes. `block` should be used only inside a `ContentPlaceholder`.
   static Widget block({
     double? width,
     double? height,
