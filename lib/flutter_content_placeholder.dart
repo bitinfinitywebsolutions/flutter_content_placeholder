@@ -50,7 +50,7 @@ class ContentPlaceholder extends StatelessWidget {
   /// Shimmer animation gradient color.
   final Color highlightColor;
 
-  ContentPlaceholder({
+  const ContentPlaceholder({super.key,
     this.width,
     this.height,
     this.context,
@@ -85,10 +85,10 @@ class ContentPlaceholder extends StatelessWidget {
           width: width ?? MediaQuery.of(effectiveContext).size.width,
           height: height,
           context: effectiveContext,
-          topSpacing: spacing.top ?? 0,
-          leftSpacing: spacing.left ?? 0,
-          rightSpacing: spacing.right ?? 0,
-          bottomSpacing: spacing.bottom ?? _Styles.defaultSpacingSingle,
+          topSpacing: spacing.top,
+          leftSpacing: spacing.left,
+          rightSpacing: spacing.right,
+          bottomSpacing: spacing.bottom,
           borderRadius: borderRadius,
         ),
       );
