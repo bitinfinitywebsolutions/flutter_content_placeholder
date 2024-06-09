@@ -1,8 +1,38 @@
+/// A Flutter library for creating content skeletons or placeholders to be displayed while content is loading.
+///
+/// The `flutter_content_placeholder` library provides a customizable way to create placeholders for your content
+/// while data is being fetched or loaded asynchronously.
+///
+/// To use this library, simply import `flutter_content_placeholder` and utilize the `ContentPlaceholder` widget
+/// to create your content skeletons.
+///
+/// Example:
+/// ```dart
+/// import 'package:flutter/material.dart';
+/// import 'package:flutter_content_placeholder/flutter_content_placeholder.dart';
+///
+/// class MyWidget extends StatelessWidget {
+///   @override
+///   Widget build(BuildContext context) {
+///     return Scaffold(
+///       body: ContentPlaceholder(
+///         child: MyContentWidget(), // Your content widget
+///       ),
+///     );
+///   }
+/// }
+/// ```
 library flutter_content_placeholder;
 
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
+/// A widget that creates a placeholder for content.
+///
+/// The `ContentPlaceholder` widget can be used to create a placeholder for your content
+/// while it is being loaded or fetched asynchronously. It can be used with or without
+/// a child widget. If a child widget is provided, the placeholder will overlay the child
+/// with a shimmer effect, otherwise, it will create a standalone placeholder block.
 class ContentPlaceholder extends StatelessWidget {
   static Widget block({
     double? width,
@@ -30,26 +60,46 @@ class ContentPlaceholder extends StatelessWidget {
     );
   }
 
-  /// If child is `null` you will get one block. If child contains some widget, the widget will be covered with placeholder.
+  /// The child widget that will be overlaid with the placeholder.
+  ///
+  /// If `child` is `null`, a standalone placeholder block will be created.
   final Widget? child;
 
-  /// Default width will be 100%.
+  /// The width of the placeholder. If not provided, defaults to `null`.
   final double? width;
+
+  /// The height of the placeholder. If not provided, defaults to `null`.
   final double? height;
+
+  /// The border radius of the placeholder. If not provided, defaults to `_Styles.defaultBorderRadius`.
   final double borderRadius;
+
+  /// The BuildContext for the placeholder. If not provided, defaults to `null`.
   final BuildContext? context;
+
+  /// The spacing around the placeholder.
+  ///
+  /// If not provided, defaults to `_Styles.defaultSpacing`.
   final EdgeInsets spacing;
 
-  /// Blocks background color
+  /// The background color of the placeholder block.
+  ///
+  /// If not provided, defaults to `_Styles.defaultPlaceholderColor`.
   final Color bgColor;
 
-  /// Is shimmer animation needed. Default is `true`.
+  /// Specifies whether the shimmer animation is enabled.
+  ///
+  /// If not provided, defaults to `true`.
   final bool isAnimationEnabled;
 
-  /// Shimmer animation gradient color.
+  /// The color of the shimmer animation highlight.
+  ///
+  /// If not provided, defaults to `_Styles.defaultPlaceholderHighlight`.
   final Color highlightColor;
 
-  const ContentPlaceholder({super.key,
+  /// Creates a `ContentPlaceholder` widget.
+  const ContentPlaceholder({
+    super.key,
     this.width,
     this.height,
     this.context,
@@ -95,6 +145,7 @@ class ContentPlaceholder extends StatelessWidget {
   }
 }
 
+/// Provides default styles used within the `ContentPlaceholder` widget.
 class _Styles {
   static const double defaultSpacingSingle = 10;
   static const EdgeInsets defaultSpacing =
