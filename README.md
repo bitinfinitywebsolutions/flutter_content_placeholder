@@ -1,7 +1,7 @@
 # Flutter Content Placeholder
 
 [![pub package](https://img.shields.io/pub/v/flutter_content_placeholder.svg)](https://pub.dartlang.org/packages/flutter_content_placeholder)
-[![pub points](https://img.shields.io/pub/points/underscore?color=2E8B57&label=pub%20points)](https://pub.dev/packages/flutter_content_placeholder/score)
+[![pub points](https://img.shields.io/pub/points/flutter_content_placeholder?color=2E8B57&label=pub%20points)](https://pub.dev/packages/flutter_content_placeholder/score)
 [![](https://img.shields.io/badge/license-MIT-green)](https://github.com/bitinfinitywebsolutions/flutter_content_placeholder/blob/master/LICENSE)
 
 A Flutter Content Placeholder plugin to make nice animated shimmer content placeholders. This plugin uses shimmer flutter plugin for shimmer animation.
