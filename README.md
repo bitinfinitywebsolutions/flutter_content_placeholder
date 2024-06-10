@@ -1,6 +1,7 @@
 # Flutter Content Placeholder
 
-[![pub package](https://img.shields.io/pub/v/shimmer.svg)](https://pub.dartlang.org/packages/shimmer) [![](https://img.shields.io/badge/license-MIT-green)](https://github.com/bitinfinitywebsolutions/flutter_content_placeholder/blob/master/LICENSE)
+[![pub package](https://img.shields.io/pub/v/flutter_content_placeholder.svg)](https://pub.dartlang.org/packages/flutter_content_placeholder) 
+[![](https://img.shields.io/badge/license-MIT-green)](https://github.com/bitinfinitywebsolutions/flutter_content_placeholder/blob/master/LICENSE)
 
 A Flutter Content Placeholder plugin to make nice animated shimmer content placeholders. This plugin uses shimmer flutter plugin for shimmer animation.
 
@@ -35,7 +36,7 @@ Now in your Dart code, you can use:
 import 'package:flutter_content_placeholder/flutter_content_placeholder.dart';
 ```
 
-#### 4. Import it
+#### 4. Use it
 
 Now in your Dart code, you can use:
 
