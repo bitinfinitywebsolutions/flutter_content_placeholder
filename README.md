@@ -14,7 +14,7 @@ Add this to your package's pubspec.yaml file:
 
 ```
 dependencies:
-  flutter_content_placeholder: ^0.0.2
+  flutter_content_placeholder: ^0.0.3
 ```
 
 #### 2. Install it
