@@ -1,6 +1,6 @@
 name: flutter_content_placeholder
 description: A Flutter Content Placeholder plugin to make nice animated shimmer content placeholders. This plugin uses shimmer flutter plugin for shimmer animation.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/bitinfinitywebsolutions/flutter_content_placeholder
 homepage: https://github.com/bitinfinitywebsolutions/flutter_content_placeholder.git
 issue_tracker: https://github.com/bitinfinitywebsolutions/flutter_content_placeholder/issues

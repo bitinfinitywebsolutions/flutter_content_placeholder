@@ -1,10 +1,10 @@
 # Flutter Content Placeholder
 
-[![pub package](https://img.shields.io/pub/v/flutter_content_placeholder.svg)](https://pub.dartlang.org/packages/flutter_content_placeholder)
-[![pub points](https://img.shields.io/pub/points/flutter_content_placeholder?color=2E8B57&label=pub%20points)](https://pub.dev/packages/flutter_content_placeholder/score)
+[![pub package](https://img.shields.io/pub/v/shimmer.svg)](https://pub.dartlang.org/packages/shimmer)
 [![](https://img.shields.io/badge/license-MIT-green)](https://github.com/bitinfinitywebsolutions/flutter_content_placeholder/blob/master/LICENSE)
 
-A Flutter Content Placeholder plugin to make nice animated shimmer content placeholders. This plugin uses shimmer flutter plugin for shimmer animation.
+A Flutter Content Placeholder plugin to make nice animated shimmer content placeholders. This plugin
+uses shimmer flutter plugin for shimmer animation.
 
 ## How to use
 
@@ -14,7 +14,7 @@ Add this to your package's pubspec.yaml file:
 
 ```
 dependencies:
-  flutter_content_placeholder: ^0.0.1
+  flutter_content_placeholder: ^0.0.2
 ```
 
 #### 2. Install it
@@ -27,7 +27,8 @@ with Flutter:
 $ flutter pub add flutter_content_placeholder
 ```
 
-Alternatively, your editor might support `flutter packages get`. Check the docs for your editor to learn more.
+Alternatively, your editor might support `flutter packages get`. Check the docs for your editor to
+learn more.
 
 #### 3. Import it
 
@@ -42,9 +43,10 @@ import 'package:flutter_content_placeholder/flutter_content_placeholder.dart';
 Now in your Dart code, you can use:
 
 ```dart
-ContentPlaceholder.block(
-    width: 100,
-    height: 100,
-    rightSpacing: 10,
+ContentPlaceholder.block
+(
+width: 100,
+height: 100,
+rightSpacing: 10,
 )
 ```
